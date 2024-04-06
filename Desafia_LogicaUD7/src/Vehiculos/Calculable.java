@@ -1,4 +1,4 @@
-package Vehiculo;
+package Vehiculos;
 
 public interface Calculable {
 
