@@ -1,13 +1,16 @@
 package Vehiculos;
 
-public abstract class Vehiculo {
+abstract class Vehiculo {
 
     private String marca_Vehiculo;
     private String modelo_Vehiculo;
-    private String numero_Bastidor; // 17 Digitos asignado por el fabricante
+    private String numero_Bastidor;
     private int numero_Puertas_Vehiculo;
 
     public static int CantidadVehículosFuncionando = 0;
+
+    // Dentro de ambos constructores doy la instruccion de que aumente la variable
+    // estatica por cada objeto que se instancie.
 
     public Vehiculo() {
 
@@ -26,8 +29,8 @@ public abstract class Vehiculo {
     }
 
     public String toString() {
-        return "Marca: " + getMarca_Vehiculo() + "Modelo: " + getModelo_Vehiculo() + "NBastidor: "
-                + getNumero_Bastidor() + "Npuertas: " + getNumero_Puertas_Vehiculo();
+        return "Marca:" + getMarca_Vehiculo() + ", Modelo:" + getModelo_Vehiculo() + ", NBastidor:"
+                + getNumero_Bastidor() + ", Npuertas:" + getNumero_Puertas_Vehiculo();
     }
 
     public String getMarca_Vehiculo() {

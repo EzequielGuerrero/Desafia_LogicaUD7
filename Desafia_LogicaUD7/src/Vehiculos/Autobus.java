@@ -29,7 +29,7 @@ public class Autobus extends Vehiculo {
 
     public String toString() {
 
-        return super.toString() + "Numero de Autobus: " + getNumero_Bus() + "NParadas: " + getNumero_Paradas();
+        return super.toString() + ", Numero de Autobus:" + getNumero_Bus() + ", NParadas:" + getNumero_Paradas();
     }
 
     // A continuacion se declaran los getters y setters correspondientes.

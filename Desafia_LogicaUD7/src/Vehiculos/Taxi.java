@@ -17,8 +17,8 @@ public class Taxi extends Turismo implements Calculable, Iniciable {
 
     @Override
     public String toString() {
-        return super.toString() + "Importe inicio: " + getIMPORTE_INICIO() + ", Importe Km: " + getImpoteKm()
-                + ", KmRecorridos: " + getKmRecorridos() + ", Coste del trayecto: " + calcularCosteTrayecto();
+        return super.toString() + " Importe de inicio:" + getIMPORTE_INICIO() + ", Importe Km:" + getImpoteKm()
+                + ", KmRecorridos:" + getKmRecorridos() + ", Coste del trayecto:" + calcularCosteTrayecto() + " Euros";
 
     }
 
@@ -44,6 +44,8 @@ public class Taxi extends Turismo implements Calculable, Iniciable {
 
     @Override
     public void reiniciarContador(double kilometros) {
+
+        setKmRecorridos(kilometros);
 
         System.out.println("El Taxi lleva acumulados un total de: " + kilometros + "kilometros de recorrido.");
     }
